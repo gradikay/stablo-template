@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/stablo-template/static/css/main.ba8a7c12.css",
-    "main.js": "/stablo-template/static/js/main.67c70240.js",
+    "main.js": "/stablo-template/static/js/main.bb0aea8d.js",
     "static/js/453.7e5b7ebc.chunk.js": "/stablo-template/static/js/453.7e5b7ebc.chunk.js",
     "index.html": "/stablo-template/index.html",
     "main.ba8a7c12.css.map": "/stablo-template/static/css/main.ba8a7c12.css.map",
-    "main.67c70240.js.map": "/stablo-template/static/js/main.67c70240.js.map",
+    "main.bb0aea8d.js.map": "/stablo-template/static/js/main.bb0aea8d.js.map",
     "453.7e5b7ebc.chunk.js.map": "/stablo-template/static/js/453.7e5b7ebc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba8a7c12.css",
-    "static/js/main.67c70240.js"
+    "static/js/main.bb0aea8d.js"
   ]
 }
