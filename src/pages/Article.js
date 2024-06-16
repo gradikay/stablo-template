@@ -54,7 +54,7 @@ export default function Article(){
         </article>
         <section className='row py-3' style={{color:appTheme.textColor}}>
           <div className="col-sm-12 col-lg-3 text-center mx-auto">
-          <Link to="../archive" className="btn btn-white shadow-sm" style={{color:appTheme.textColor, border:`2px solid ${appTheme.textColor}`}}>
+          <Link link="../archive" className="btn btn-white shadow-sm" style={{color:appTheme.textColor, border:`2px solid ${appTheme.textColor}`}}>
             View All Posts
           </Link>
           </div>

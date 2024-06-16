@@ -8,7 +8,7 @@ export default function ImageCard(props){
     const {img, title, section, section2, author, date, profilePicture, fullTitle} = props;
 
     return(
-        <Link style={{textDecoration:"none", cursor: "pointer"}} to={`../article/${fullTitle}`}>
+        <Link style={{textDecoration:"none", cursor: "pointer"}} link={`../article/${fullTitle}`}>
 
         <div className="card pb-4 border-0" style={{backgroundColor:appTheme.backgroundColor}}>
             <div className="imageZoomContainer mb-1 d-flex align-items-center justify-content-around">
@@ -30,7 +30,7 @@ export default function ImageCard(props){
                 </p>
                 </div>
             <div className={`card-body py-0 px-2 ${title == "none" ? "d-none" : "" }`}>
-                <Link className="nav-link" to={`../article/${fullTitle}`}>
+                <Link className="nav-link" link={`../article/${fullTitle}`}>
                     <h2 className="animated-text card-title" title={`${fullTitle}`} style={{backgroundColor:appTheme.backgroundColor, fontSize: "1.125rem", color:appTheme.textColor}}>
                         {title}
                     </h2>

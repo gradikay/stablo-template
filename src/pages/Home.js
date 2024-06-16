@@ -49,7 +49,7 @@ export default function Home(){
 
         <section className='row pt-3 pb-5'>
           <div className="col-sm-12 col-lg-3 text-center mx-auto">
-          <Link to="archive" className="btn btn-white shadow-sm" style={{color:appTheme.textColor, border:`2px solid ${appTheme.textColor}`}}>
+          <Link link="archive" className="btn btn-white shadow-sm" style={{color:appTheme.textColor, border:`2px solid ${appTheme.textColor}`}}>
             View All Posts
           </Link>
           </div>

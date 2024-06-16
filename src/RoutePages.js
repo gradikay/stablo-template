@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -8,17 +8,18 @@ import Article from './pages/Article';
 import Layout from "./pages/Layout";
 
 export default function RoutePages(){
-    return(
-        <BrowserRouter>
+    const basename = process.env.NODE_ENV === 'development' ? '/' : '/stablo-template';
+    return (
+        <BrowserRouter basename={basename}>
             <Routes>
-                <Route path="/stablo-template" element={<Layout/>}>
-                    <Route index exact element={<Home />}/>
-                    <Route path="about" exact element={<About />}/>
-                    <Route path="contact" exact element={<Contact/>}/>
-                    <Route path="archive" exact element={<Archive/>}/>
-                    <Route path="article/:title" element={<Article/>}/>
-                    <Route path="*" element={<PageNotFound/>} />
-                </Route>   
+                <Route element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="contact" element={<Contact />} />
+                    <Route path="archive" element={<Archive />} />
+                    <Route path="article/:title" element={<Article />} />
+                    <Route path="*" element={<PageNotFound />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     );
