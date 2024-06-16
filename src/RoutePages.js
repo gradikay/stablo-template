@@ -4,6 +4,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Archive from './pages/Archive';
 import PageNotFound from "./pages/PageNotFound";
+import Article from './pages/Article';
 import Layout from "./pages/Layout";
 
 export default function RoutePages(){
@@ -11,10 +12,11 @@ export default function RoutePages(){
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout/>}>
-                    <Route index element={<Home />}/>
-                    <Route path="about" element={<About />}/>
-                    <Route path="contact" element={<Contact/>}/>
-                    <Route path="archive" element={<Archive/>}/>
+                    <Route index exact element={<Home />}/>
+                    <Route path="about" exact element={<About />}/>
+                    <Route path="contact" exact element={<Contact/>}/>
+                    <Route path="archive" exact element={<Archive/>}/>
+                    <Route path="article/:title" element={<Article/>}/>
                     <Route path="*" element={<PageNotFound/>} />
                 </Route>   
             </Routes>

@@ -1,6 +1,7 @@
 import React from "react";
 import '../ImageCard.css';
 import { UseAppContext } from "../libs/contextLib";
+import { Link } from "react-router-dom";
 
 export default function ImageCard(props){
     const {appTheme} = UseAppContext();
@@ -27,9 +28,11 @@ export default function ImageCard(props){
                 </p>
                 </div>
             <div className={`card-body py-0 px-2 ${title == "none" ? "d-none" : "" }`}>
-                <h2 className="animated-text card-title" title={`${fullTitle}`} style={{backgroundColor:appTheme.backgroundColor, fontSize: "1.125rem", color:appTheme.textColor}}>
-                    {title}
-                </h2>
+                <Link className="nav-link" to={`../article/${fullTitle}`}>
+                    <h2 className="animated-text card-title" title={`${fullTitle}`} style={{backgroundColor:appTheme.backgroundColor, fontSize: "1.125rem", color:appTheme.textColor}}>
+                        {title}
+                    </h2>
+                </Link>
             </div>
             <div className={`card-footer px-2 border-0 ${author == "none" ? "d-none" : "" }`} style={{backgroundColor: appTheme.backgroundColor, color:appTheme.textColor, opacity:"0.70"}}>
                 <p className="my-0 d-flex align-content-center rounded p-2" title={`Publishe by ${author} on ${date}`} style={{fontSize: "0.875rem", border:`2px dashed ${appTheme.textColor}`, fontWeight: "500"}}>
