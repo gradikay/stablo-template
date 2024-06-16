@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
-import ImageCard from "../components/ImageCard";
 import { UseAppContext } from "../libs/contextLib";
 import { useParams } from "react-router-dom";
+import {Link} from "react-router-dom";
+
 
 export default function Article(){
   const {data, appTheme} = UseAppContext();
@@ -9,10 +10,10 @@ export default function Article(){
   const article = data.posts.find(post => post.title === title);
     return(
         <Fragment>
-          <header className='row py-5' style={{color:appTheme.textColor, backgroundColor : appTheme.backgroundColor}}>
+          <header className='row pt-5 pb-3' style={{color:appTheme.textColor}}>
             <div className="col-8 mx-auto">
                 <h1 className="text-center"> {title} </h1>
-                <p className="text-capitalize text-center"> 
+                <p className="text-capitalize text-center text-primary"> 
                     <b> {article.section[0]} / {article.section[1]} </b> 
                 </p>
                 <p className="my-0  rounded p-2 text-center" title={`Publishe by ${article.author} on ${article.date}`} style={{fontSize: "0.875rem", fontWeight: "500"}}>
@@ -20,9 +21,10 @@ export default function Article(){
                     src={article.profilePicture} 
                     alt="Small Image" 
                     className="me-2 rounded-circle shadow"
-                    style={{width: "3rem", height: "3rem", objectFit: "cover", border:`2px dashed ${appTheme.textColor}`}}
+                    style={{width: "3.5rem", height: "3.5rem", objectFit: "cover", border:`2px dashed ${appTheme.textColor}`}}
                     />
-                    <span className="me-2"> {article.author} </span>  
+                    <span className=""> {article.author} </span>  
+                    <span className="mx-2"> • </span> 
                     <span className=""> {article.date} </span> 
                      
                 </p>
@@ -39,17 +41,40 @@ export default function Article(){
                 />
               </div>
         </section>
-          <section className='row pb-5 pt-3'>
-            <div className="col-sm-12 col-lg-3 text-center mx-auto">
-            <ul className="pagination">
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}}  href="#">Previous</a></li>
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}} href="#">1</a></li>
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}} href="#">2</a></li>
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}}href="#">3</a></li>
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}}href="#">Next</a></li>
-            </ul>
+        <article className="row my-4" style={{color:appTheme.textColor}}>
+          <div className="col-9 mx-auto">
+
+          <h2 className="py-3" style={{fontSize: "1.2rem"}}>{article.article[0].heading1}</h2>
+          <p style={{fontSize: "1rem"}}>{article.article[0].paragraph2}</p>
+          <p style={{fontSize: "1rem"}}>{article.article[0].paragraph3}</p>
+          <h2 className="py-3" style={{fontSize: "1.2rem"}}>{article.article[0].heading2}</h2>
+          <p style={{fontSize: "1rem"}}>{article.article[0].paragraph4}</p>
+          </div>
+
+        </article>
+        <section className='row py-3' style={{color:appTheme.textColor}}>
+          <div className="col-sm-12 col-lg-3 text-center mx-auto">
+          <Link to="../archive" className="btn btn-white shadow-sm" style={{color:appTheme.textColor, border:`2px solid ${appTheme.textColor}`}}>
+            View All Posts
+          </Link>
+          </div>
+          
+          <section className='row mt-5 p-5 pb-0'>
+            <div className="col-sm-12 col-md-3 mb-3 text-center">
+              <img 
+                src={article.profilePicture} 
+                alt="Small Image" 
+                className="me-2 rounded shadow-sm rounded-circle"
+                style={{width: "10rem", height: "10rem", objectFit: "cover", border:`2px dashed ${appTheme.textColor}`}}
+                />
+            </div>
+            <div className="col-sm-12 col-md m-3" style={{fontSize:"1.125rem"}}>
+                <h3>About {article.author} </h3>
+                <p>{article.aboutAuthor}</p>
             </div>
           </section>
+        </section>
+
         </Fragment>
     );
 }

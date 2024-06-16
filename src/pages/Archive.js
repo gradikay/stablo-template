@@ -16,7 +16,7 @@ export default function Archive(){
           <section className='row'>
           {
             data.posts.map((post, index) => (
-              <div className="col-sm-12 col-lg-4" key={index}>
+              <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
                 <ImageCard 
                 fullTitle={post.title}
                 title={post.title.length > 40 ? post.title.slice(0,40) + " ... read more" : post.title}

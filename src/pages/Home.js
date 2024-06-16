@@ -14,7 +14,8 @@ export default function Home(){
             data.posts.slice(0,2).map((post, index) => (
               <div className="col-sm-12 col-md-6" key={index}>
                 <ImageCard 
-                title={post.title}
+                fullTitle={post.title}
+                title={post.title.length > 40 ? post.title.slice(0,40) + " ... read more" : post.title}
                 author={post.author}
                 section={post.section[0]}
                 section2={post.section[1]}
