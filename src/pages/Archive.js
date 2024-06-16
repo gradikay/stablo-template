@@ -31,17 +31,6 @@ export default function Archive(){
             ))
           }
         </section>
-          <section className='row pb-5 pt-3'>
-            <div className="col-sm-12 col-lg-3 text-center mx-auto">
-            <ul className="pagination">
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}}  href="#">Previous</a></li>
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}} href="#">1</a></li>
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}} href="#">2</a></li>
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}}href="#">3</a></li>
-              <li className="page-item"><a className="page-link" style={{color:appTheme.backgroundColor, backgroundColor:appTheme.textColor}}href="#">Next</a></li>
-            </ul>
-            </div>
-          </section>
         </Fragment>
     );
 }
