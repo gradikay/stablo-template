@@ -1,60 +1,71 @@
-import { createContext, useEffect, useState } from 'react';
-import './App.css';
-import RoutePages from './RoutePages';
+import { useEffect, useState } from 'react';
+import { AppContext } from './libs/contextLib';
 import Footer from './containers/Footer';
-import { DataContext } from './libs/contextLib';
-
+import RoutePages from './RoutePages';
+import './App.css';
 
 function App() {
 
-    const dummyData = {
-        posts: [
-          {
-            section: ["none", "none", "none"],
-            author: "Gradi",
-            title: "none",
-            date: "06/13/2024",
-            pic: "me.jpg",
-            image: "building.jpg"
-          }
-        ]
-      };
-
-    const [data, setData] = useState(dummyData);
-
-    useEffect(() => {
-        const fetchData = async () =>{
-            try{
-                const response = await fetch('/data/data.json');
-                if(!response.ok){
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                setData(data);
-
-            } catch(error) {
-                console.error('Error fetching data:', error);
+  const [appTheme, setAppTheme] = useState({backgroundColor: "white", textColor: "black"});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [data, setData] = useState(
+      {
+          posts: [
+            {
+              section: ["none", "none", "none"],
+              author: "Gradi",
+              title: "none",
+              date: "06/13/2024",
+              profilePicture: "me.jpg",
+              image: "building.jpg"
             }
+          ]
         }
-        fetchData();
-    }, []);
+  );
 
-    //const title = data && data.posts[0].title;
-    //const author = data && data.data[0].author;
-    //console.log("this is post title: " + title)
+  useEffect(() => {
+      const fetchData = async () =>{
+          try{
+              const response = await fetch('/data/data.json');
+              if(!response.ok){
+                  throw new Error('Network response was not ok');
+              }
+              const data = await response.json();
+              setData(data);
 
-    return (
-        <DataContext.Provider value={data}>
+          } catch(error) {
+              console.error('Error fetching data:', error);
+              setError(error.message);
+          } finally {
+              setLoading(false);
+          }
+      }
+      fetchData();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  return (
+      <AppContext.Provider value={{data, appTheme, setAppTheme}}>
+          <div className="" style={{backgroundColor: appTheme.backgroundColor}}>
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-12 col-lg-9 col-md-11 mt-4 mx-auto">
+                    <div className="col-sm-12 col-md-12 col-lg-11 col-xl-9 mt-4 mx-auto">
                     <RoutePages/>
                     <Footer/>
                     </div>
                 </div>
-            </div>
-        </DataContext.Provider>
-    );
+              </div>
+          </div>
+      </AppContext.Provider>
+  );
 }
 
 export default App;

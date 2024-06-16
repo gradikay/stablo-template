@@ -1,14 +1,14 @@
 .imageZoomContainer{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    /* border: 2px solid white; */
-    /* border-radius: 10%; */
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 5%;
     transition-duration: 0.5s;
 }
 .imageZoomContainer:hover{
     transition-duration: 0.4s;
     margin-left: 0rem;
     margin-right: 0rem;
-    /* border: 2px solid rgba(140, 140, 140, 0.455); */
-    /* border-radius: 30%; */
+    border: 3px solid rgba(8, 8, 8, 0.621);
+    border-radius: 40%;
 }

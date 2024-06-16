@@ -1,33 +1,77 @@
 import React from "react";
+import { UseAppContext } from "../libs/contextLib";
 
 export default function Footer(){
+
+  const {appTheme, setAppTheme} = UseAppContext();
+  //console.log(); // Testing/Debugging
+
     return(
-        <footer className='row border-top py-5 mt-5'>
-            <div className="col-sm-12 col-lg-3 text-center">
-              <div className="dropdown dropstart dropup">
-                <button type="button" className="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown2">
-                  Powered by Gradi
-                </button>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Link 1</a></li>
-                  <li><a className="dropdown-item" href="#">Link 2</a></li>
-                  <li><a className="dropdown-item" href="#">Link 3</a></li>
-                </ul>
-              </div>
+        <footer className='row py-5 mt-5' style={{color:appTheme.textColor, borderTop:`2px solid ${appTheme.textColor}`}}>
+            <div className="col-sm-12 col-md-3 col-lg-4 mb-3 text-center">
+              <button type="button" className="btn" style={{color:appTheme.backgroundColor, backgroundColor : appTheme.textColor}} disabled >
+                Powered by Gradi
+              </button>
+              <button type="button" className="btn" style={{color:appTheme.backgroundColor, backgroundColor : appTheme.textColor}} disabled >
+                <i> Images by Freepik.com</i>
+              </button>
             </div>
-            <div className="col-sm-12 col-lg-6 text-center">
-                <p>Copyright © 2024 Stablo. All rights reserved.</p>
-                <p>Made by Web3Templates · Github</p>
+            <div className="col-sm-12 col-md-6 col-lg-4 mb-3 text-center">
+                <p>Copyright © 2024 Gradi Stable. All rights reserved.</p>
+                <p>Made from scratch · Gradi Kayamba</p>
             </div>
-            <div className="col-sm-12 col-lg-3">
-            <div className="dropdown dropend">
-                <button type="button" className="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown2">
-                  System
+            <div className="col-sm-12 col-md-3 col-lg-4">
+            <div className="dropdown dropend text-center">
+                <button 
+                type="button" 
+                data-bs-toggle="dropdown"
+                className={`btn dropdown-toggle rounded shadow-sm`}
+                style={{color:appTheme.textColor, border:`2px solid ${appTheme.textColor}`}}
+                >
+                   Theme
                 </button>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Link 1</a></li>
-                  <li><a className="dropdown-item" href="#">Link 2</a></li>
-                  <li><a className="dropdown-item" href="#">Link 3</a></li>
+                
+                <ul className="dropdown-menu px-2">
+                  <li>
+                    <button 
+                    type="button" 
+                    className="btn border"
+                    style={{backgroundColor: "#ecf39e", color: "#132a13"}}
+                    onClick={() => setAppTheme({backgroundColor: "#ecf39e", textColor: "#132a13"})}
+                    >
+                      Green Ocean
+                    </button>
+                  </li>
+                  <li>
+                    <button 
+                    type="button" 
+                    className="btn border my-2"
+                    style={{backgroundColor: "#023047", color: "#fb8500"}}
+                    onClick={() => setAppTheme({backgroundColor: "#023047", textColor: "#fb8500"})}
+                    >
+                      Blue Origin
+                    </button>
+                  </li>
+                  <li>
+                    <button 
+                    type="button" 
+                    className="btn border mb-2"
+                    style={{backgroundColor: "black", color: "white"}}
+                    onClick={() => setAppTheme({backgroundColor: "black", textColor: "white"})}
+                    >
+                      Black on white
+                    </button>
+                    <li>
+                    <button 
+                    type="button" 
+                    className="btn border"
+                    style={{backgroundColor: "white", color: "black"}}
+                    onClick={() => setAppTheme({backgroundColor: "white", textColor: "black"})}
+                    >
+                      Reset
+                    </button>
+                  </li>
+                  </li>
                 </ul>
               </div>
             </div>

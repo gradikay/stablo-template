@@ -11,13 +11,12 @@ const Layout = () =>{
                 <NavLink name="Home" link="" />
                 <NavLink name="About" link="about" />
                 <NavLink name="Contact" link="contact" />
-                <NavBrand name="Stablo" link="" />
+                <NavBrand name="Stable" link="" />
                 <NavLink name="Archive" link="archive" />
                 <NavLink name="Pro Version" link="proversion" />
                 <NavLink name="Download" link="download" />
                 </ul>
             </nav>
-
             <Outlet/>
           </Fragment>
     );
