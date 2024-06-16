@@ -45,7 +45,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>Loading my app...</div>;
   }
 
   if (error) {
