@@ -11,7 +11,7 @@ export default function RoutePages(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout/>}>
+                <Route path="/stablo-template" element={<Layout/>}>
                     <Route index exact element={<Home />}/>
                     <Route path="about" exact element={<About />}/>
                     <Route path="contact" exact element={<Contact/>}/>
