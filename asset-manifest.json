@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stablo-template/static/css/main.ba8a7c12.css",
+    "main.js": "/stablo-template/static/js/main.98235af4.js",
+    "static/js/453.7e5b7ebc.chunk.js": "/stablo-template/static/js/453.7e5b7ebc.chunk.js",
+    "index.html": "/stablo-template/index.html",
+    "main.ba8a7c12.css.map": "/stablo-template/static/css/main.ba8a7c12.css.map",
+    "main.98235af4.js.map": "/stablo-template/static/js/main.98235af4.js.map",
+    "453.7e5b7ebc.chunk.js.map": "/stablo-template/static/js/453.7e5b7ebc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba8a7c12.css",
+    "static/js/main.98235af4.js"
+  ]
+}
