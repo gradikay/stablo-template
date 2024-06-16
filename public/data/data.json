@@ -1,0 +1,117 @@
+{
+    "posts":[
+        {
+            "section":["technology", "science", "health"], 
+            "author":"Jean Pascal",
+            "title":"Architectural Engineering Wonders of the modern era for your Inspiration",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"https://img.freepik.com/free-photo/girl-social-media_53876-90181.jpg?t=st=1718505751~exp=1718509351~hmac=7fa5f54ae61611ecb4ea0f8eb850d267046c3139d457873e28b8097ab463e144&w=996"
+        },
+        {
+            "section":["lifestyle", "mood"], 
+            "author":"Sean Kingston",
+            "title":"5 Effective Brain Recharging Activities No One is Talking About",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"https://img.freepik.com/free-photo/fashionable-lady-with-short-hair-striped-shirt-jeans-hat-walking-with-grey-haired-man-light-clothes-with-dog-park_197531-19162.jpg?t=st=1718505873~exp=1718509473~hmac=8ec22a6e9c27eefcc566ce6fec98c572cad7775471679e921a052d57cbefed03&w=996"
+        },
+        {
+            "section":["personal growth", "travel", "vacation"], 
+            "author":"Marie Antoinette",
+            "title":"14 Architectural Design Ideas for a Spacious Interior",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"https://img.freepik.com/free-photo/portrait-athletic-woman-competing-olympic-games-tournament_23-2151460333.jpg?t=st=1718505629~exp=1718509229~hmac=7ebef496830af7633bb3edb0778b6a3fa4221016ca04798fe9baa0eb5c171bec&w=1060"
+        },
+        {
+            "section":["personal growth"], 
+            "author":"Fill Temier",
+            "title":"Every Next Level of Your Life Will Demand a Different You",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"https://img.freepik.com/free-photo/young-attractive-slim-woman-doing-sport-exercises-morning-sunrise-beach-sports-wear-healthy-lifestyle-listening-music-earphones-making-stretching-arms_285396-5530.jpg?t=st=1718506054~exp=1718509654~hmac=85b1eda0293c80e3fe8d4014a39b1617445872238d474be6972379661b119818&w=996"
+        },
+        {
+            "section":["science", "video"], 
+            "author":"Beatoven",
+            "title":"This Bread Pudding Will Give You All the Fall Feels",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"https://img.freepik.com/free-photo/female-scientist-with-hijab-microscope-laboratory_23-2148492087.jpg?t=st=1718506142~exp=1718509742~hmac=16a84f69d535b8d4a891164bbc29ec0e35b6109e0d19ac5011dfeadcbc6673a5&w=900"
+        },
+        {
+            "section":["personal growth"], 
+            "author":"Madam Lamier",
+            "title":"I Moved Across the Country and Never Looked Back",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"https://img.freepik.com/free-photo/lifestyle-people-living-camping_23-2149733079.jpg?t=st=1718506227~exp=1718509827~hmac=656a8cad485a17ca9b48ccf635fe2859ef02be9d1b8da9bed1c31bec6f43b311&w=1060"
+        },
+        {
+            "section":["technology", "science", "health"], 
+            "author":"Jean Pascal",
+            "title":"3 Meaningful Ways to Practice Self-Care as an Introvert",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"building.jpg"
+        },
+        {
+            "section":["technology", "science", "health"], 
+            "author":"Fiston Gaston",
+            "title":"The Rise of Artificial Intelligence and the Future of Humans",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"building.jpg"
+        },
+        {
+            "section":["technology", "science", "health"], 
+            "author":"Allen Appel",
+            "title":"10 Simple Practices That Will Help You Get 1% Better Every Day",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"building.jpg"
+        },
+        {
+            "section":["health"], 
+            "author":"Jean Pascal",
+            "title":"Every Artist has to see the Amazing Pictures on the Internet",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"building.jpg"
+        },
+        {
+            "section":["technology"], 
+            "author":"Jean Pascal",
+            "title":"How Technology Evolved Under the Bright Sun of Universe",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"building.jpg"
+        },
+        {
+            "section":["travel"], 
+            "author":"Jean Pascal",
+            "title":"Lessons Of Happiness I learned from a Mountain Village",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"building.jpg"
+        },
+        {
+            "section":["education"], 
+            "author":"Jean Pascal",
+            "title":"The Rise of Artificial Intelligence and the Future of Humans",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"building.jpg"
+        },
+        {
+            "section":["entertainment"], 
+            "author":"Jean Pascal",
+            "title":"Escape Fantasies of the Tech Billionaires",
+            "date":"06/13/2024",
+            "author-pic":"me.jpg",
+            "image":"building.jpg"
+        }
+
+    ]
+}

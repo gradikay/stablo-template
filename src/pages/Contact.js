@@ -22,20 +22,20 @@ export default function Contact(){
             </div>
             <div className="col-6">
             <form action="/action_page.php">
-                <div class="">
-                    <label for="fullname" class="form-label"></label>
-                    <input type="text" class="form-control form-control-lg" autoComplete="off" placeholder="Full Name"/>
+                <div className="">
+                    <label for="fullname" className="form-label"></label>
+                    <input type="text" className="form-control form-control-lg" autoComplete="off" placeholder="Full Name"/>
                 </div>
-                <div class="">
-                    <label for="email" class="form-label"></label>
-                    <input type="email" class="form-control form-control-lg" id="email" autoComplete="off" placeholder="Enter email" name="email"/>
+                <div className="">
+                    <label for="email" className="form-label"></label>
+                    <input type="email" className="form-control form-control-lg" id="email" autoComplete="off" placeholder="Enter email" name="email"/>
                 </div>
-                <div class="mb-3">
+                <div className="mb-3">
                 <label for="comment"></label>
-                <textarea class="form-control form-control-lg" rows="5" id="comment" name="text" placeholder="Your message"></textarea>
+                <textarea className="form-control form-control-lg" rows="5" id="comment" name="text" placeholder="Your message"></textarea>
                 </div>
                 <div className="d-grid">
-                    <button type="submit" class="btn btn-dark btn-block btn-lg">Send Message</button>
+                    <button type="submit" className="btn btn-dark btn-block btn-lg">Send Message</button>
 
                 </div>
                 </form>            

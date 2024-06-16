@@ -6,7 +6,7 @@ export default function Archive(){
     return(
         <Fragment>
           <header className='row py-5'>
-            <div className="col-8 mx-auto text-center">
+            <div HName="col-8 mx-auto text-center">
             <h1>Archive</h1>
             <p>See all posts we have ever written</p>
             </div>
