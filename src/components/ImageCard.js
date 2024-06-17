@@ -13,7 +13,7 @@ export default function ImageCard(props){
         <div className="card pb-4 border-0" style={{backgroundColor:appTheme.backgroundColor}}>
             <div className="imageZoomContainer mb-1 d-flex align-items-center justify-content-around">
                 <img 
-                src={img} alt="Card image" 
+                src={process.env.PUBLIC_URL + img} alt="Card image" 
                 title="Image by Freepik.com"
                 className="imageZoom card-img-top rounded shadow-sm" 
                 style={{ objectFit: "cover", height: "17rem"}}
@@ -39,7 +39,7 @@ export default function ImageCard(props){
             <div className={`card-footer px-2 border-0 ${author == "none" ? "d-none" : "" }`} style={{backgroundColor: appTheme.backgroundColor, color:appTheme.textColor, opacity:"0.70"}}>
                 <p className="my-0 d-flex align-content-center rounded p-2" title={`Publishe by ${author} on ${date}`} style={{fontSize: "0.875rem", border:`2px dashed ${appTheme.textColor}`, fontWeight: "500"}}>
                     <img 
-                    src={profilePicture} 
+                    src={process.env.PUBLIC_URL + profilePicture} 
                     alt="Small Image" 
                     className="me-2 rounded-circle" 
                     style={{width: "20px", height: "20px", objectFit: "cover"}}
