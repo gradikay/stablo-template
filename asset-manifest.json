@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/stablo-template/static/css/main.ba8a7c12.css",
-    "main.js": "/stablo-template/static/js/main.5fc4471d.js",
+    "main.css": "/stablo-template/static/css/main.ddebda7f.css",
+    "main.js": "/stablo-template/static/js/main.24840b6d.js",
     "static/js/453.7e5b7ebc.chunk.js": "/stablo-template/static/js/453.7e5b7ebc.chunk.js",
-    "static/media/man1.png": "/stablo-template/static/media/man1.0d3e3de14f60177642f9.png",
-    "static/media/woman2.png": "/stablo-template/static/media/woman2.1d230acc0161c8c8677c.png",
-    "static/media/woman3.png": "/stablo-template/static/media/woman3.8c1f232731a5475dc38b.png",
     "index.html": "/stablo-template/index.html",
-    "main.ba8a7c12.css.map": "/stablo-template/static/css/main.ba8a7c12.css.map",
-    "main.5fc4471d.js.map": "/stablo-template/static/js/main.5fc4471d.js.map",
+    "main.ddebda7f.css.map": "/stablo-template/static/css/main.ddebda7f.css.map",
+    "main.24840b6d.js.map": "/stablo-template/static/js/main.24840b6d.js.map",
     "453.7e5b7ebc.chunk.js.map": "/stablo-template/static/js/453.7e5b7ebc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba8a7c12.css",
-    "static/js/main.5fc4471d.js"
+    "static/css/main.ddebda7f.css",
+    "static/js/main.24840b6d.js"
   ]
 }
