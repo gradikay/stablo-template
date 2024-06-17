@@ -10,10 +10,7 @@ export default function Footer(){
         <footer className='row py-5 mt-5' style={{color:appTheme.textColor, borderTop:`2px solid ${appTheme.textColor}`}}>
             <div className="col-sm-12 col-md-3 col-lg-4 mb-3 text-center">
               <button type="button" className="btn" style={{color:appTheme.backgroundColor, backgroundColor : appTheme.textColor}} disabled >
-                Powered by Gradi
-              </button>
-              <button type="button" className="btn" style={{color:appTheme.backgroundColor, backgroundColor : appTheme.textColor}} disabled >
-                <i> Images by Freepik.com</i>
+                Powered by <span className="brand"> Gradi </span>
               </button>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4 mb-3 text-center">
@@ -28,7 +25,7 @@ export default function Footer(){
                 className={`btn dropdown-toggle rounded shadow-sm`}
                 style={{color:appTheme.textColor, border:`2px solid ${appTheme.textColor}`}}
                 >
-                   Theme
+                   <span className="brand"> Theme </span>
                 </button>
                 
                 <ul className="dropdown-menu px-2">
