@@ -21,8 +21,7 @@ export default function ImageCard(props) {
                     {/* Image element */}
                     <img
                         src={process.env.PUBLIC_URL + img}
-                        alt="Card image"
-                        title="Image by Freepik.com"
+                        alt=""
                         className="imageZoom card-img-top rounded shadow-sm"
                         style={{ objectFit: "cover", height: "17rem" }}
                     />
@@ -56,7 +55,7 @@ export default function ImageCard(props) {
                         {/* Author profile picture */}
                         <img
                             src={process.env.PUBLIC_URL + profilePicture}
-                            alt="Small Image"
+                            alt=""
                             className="me-2 rounded-circle"
                             style={{ width: "20px", height: "20px", objectFit: "cover" }}
                         />
