@@ -17,7 +17,7 @@ export default function Footer() {
       {/* Copyright and Made by section */}
       <div className="col-sm-12 col-md-6 col-lg-5 mb-2 text-center">
         <p>Copyright © 2024 Gradi Stable. All rights reserved.</p>
-        <p>Made from scratch · <span className="brand" style={{ fontSize: "1.2rem" }}> Gradi Kayamba </span> </p>
+        <p>Built from scratch · <span className="brand" style={{ fontSize: "1.2rem" }}> Gradi Kayamba. </span> </p>
       </div>
       {/* Theme dropdown section */}
       <div className="col-sm-12 col-md-3 col-lg-3">
