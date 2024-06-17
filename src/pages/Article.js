@@ -18,7 +18,7 @@ export default function Article(){
                 </p>
                 <p className="my-0  rounded p-2 text-center" title={`Publishe by ${article.author} on ${article.date}`} style={{fontSize: "0.875rem", fontWeight: "500"}}>
                     <img 
-                    src={article.profilePicture} 
+                    src={process.env.PUBLIC_URL + article.profilePicture} 
                     alt="Small Image" 
                     className="me-2 rounded-circle shadow"
                     style={{width: "3.5rem", height: "3.5rem", objectFit: "cover", border:`2px dashed ${appTheme.textColor}`}}
@@ -34,7 +34,7 @@ export default function Article(){
           <section className='row'>
               <div className="col-12">
               <img 
-                src={article.image} alt="Card image" 
+                src={process.env.PUBLIC_URL + article.image} alt="Card image" 
                 title="Image by Freepik.com"
                 className="imageZoom card-img-top rounded shadow-sm" 
                 style={{ objectFit: "cover"}}
@@ -54,7 +54,7 @@ export default function Article(){
         </article>
         <section className='row py-3' style={{color:appTheme.textColor}}>
           <div className="col-sm-12 col-lg-3 text-center mx-auto">
-          <Link link="../archive" className="btn btn-white shadow-sm" style={{color:appTheme.textColor, border:`2px solid ${appTheme.textColor}`}}>
+          <Link to="../archive" className="btn btn-white shadow-sm" style={{color:appTheme.textColor, border:`2px solid ${appTheme.textColor}`}}>
             View All Posts
           </Link>
           </div>
@@ -62,7 +62,7 @@ export default function Article(){
           <section className='row mt-5 p-5 pb-0'>
             <div className="col-sm-12 col-md-3 mb-3 text-center">
               <img 
-                src={article.profilePicture} 
+                src={process.env.PUBLIC_URL + article.profilePicture} 
                 alt="Small Image" 
                 className="me-2 rounded shadow-sm rounded-circle"
                 style={{width: "10rem", height: "10rem", objectFit: "cover", border:`2px dashed ${appTheme.textColor}`}}

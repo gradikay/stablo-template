@@ -7,7 +7,7 @@ export default function NavLink(props){
     const {link, name} = props;
     return(
         <li className={`nav-item align-content-center`}>
-            <Link className="nav-link px-4 py-2" link={"/" + link} style={{color:appTheme.textColor}}> 
+            <Link className="nav-link px-4 py-2" to={link} style={{color:appTheme.textColor}}> 
                 {name} 
             </Link>
         </li>
