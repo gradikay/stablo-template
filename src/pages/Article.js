@@ -17,8 +17,8 @@ export default function Article() {
   return (
     <Fragment>
       {/* Header section */}
-      <header className="row pt-5 pb-3" style={{ color: appTheme.textColor }}>
-        <div className="col-8 mx-auto">
+      <header className="row pt-3" style={{ color: appTheme.textColor }}>
+        <div className="col-sm-12 col-lg-8 mx-auto">
           {/* Article title */}
           <h1 className="text-center"> {title} </h1>
           {/* Article sections */}
@@ -54,7 +54,7 @@ export default function Article() {
 
       {/* Main article content */}
       <section className="row">
-        <div className="col-12">
+        <div className="col-12 mx-auto p-3 pt-2">
           <img
             src={process.env.PUBLIC_URL + article.image}
             alt="Card image"
@@ -66,9 +66,9 @@ export default function Article() {
       </section>
 
       {/* Article body */}
-      <article className="row my-4" style={{ color: appTheme.textColor }}>
-        <div className="col-9 mx-auto">
-          <h2 className="py-3" style={{ fontSize: "1.2rem" }}>
+      <article className="row mt-0" style={{ color: appTheme.textColor }}>
+        <div className="col-sm-12 col-lg-9 mx-auto px-3">
+          <h2 className="py-2" style={{ fontSize: "1.2rem" }}>
             {article.article[0].heading1}
           </h2>
           <p style={{ fontSize: "1rem" }}>{article.article[0].paragraph2}</p>
@@ -81,7 +81,7 @@ export default function Article() {
       </article>
 
       {/* Related content and navigation */}
-      <section className="row py-3" style={{ color: appTheme.textColor }}>
+      <section className="row mt-3" style={{ color: appTheme.textColor }}>
         <div className="col-sm-12 col-lg-3 text-center mx-auto">
           <Link
             to="../archive"
@@ -93,7 +93,7 @@ export default function Article() {
         </div>
 
         {/* Author section */}
-        <section className="row mt-5 p-5 pb-0">
+        <section className="row mx-auto mt-5 pt-5 p-3" style={{ borderTop: `2px solid ${appTheme.textColor}` }}>
           <div className="col-sm-12 col-md-3 mb-3 text-center">
             <img
               src={process.env.PUBLIC_URL + article.profilePicture}
@@ -107,7 +107,7 @@ export default function Article() {
               }}
             />
           </div>
-          <div className="col-sm-12 col-md m-3" style={{ fontSize: "1.125rem" }}>
+          <div className="col-sm-12 col-md px-3" style={{ fontSize: "1.125rem" }}>
             <h3>About {article.author} </h3>
             <p>{article.aboutAuthor}</p>
           </div>

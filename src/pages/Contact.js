@@ -9,15 +9,15 @@ const Contact = () => {
     return (
         <Fragment>
             {/* Header section */}
-            <header className='row pt-5' style={{ color: appTheme.textColor, backgroundColor: appTheme.backgroundColor }}>
+            <header className='row py-3' style={{ color: appTheme.textColor, backgroundColor: appTheme.backgroundColor }}>
                 <div className="col-8 mx-auto text-center">
                     <h1>Contact</h1>
                     <p>We are here to help.</p>
                 </div>
             </header>
             {/* Contact section */}
-            <section className="row pt-5" style={{ color: appTheme.textColor, backgroundColor: appTheme.backgroundColor }}>
-                <div className="col-6">
+            <section className="row pt-1 px-3" style={{ color: appTheme.textColor, backgroundColor: appTheme.backgroundColor }}>
+                <div className="col-sm-12 col-md-6">
                     <h1>Contact Stable</h1>
                     <p>Have something to say? We are here to help. 
                         Fill up the form or send email or call phone.</p> 
@@ -25,7 +25,7 @@ const Contact = () => {
                     <p>hello@stabletemplate.com</p>
                     <p>+1 (900) 400 7000</p>              
                 </div>
-                <div className="col-6">
+                <div className="col-sm-12 col-md-6 mb-4 p-3 shadow-sm rounded">
                     {/* Contact form */}
                     <form action="/">
                         <div className="mb-3">
@@ -40,7 +40,7 @@ const Contact = () => {
                             <label htmlFor="comment" className="form-label">Message</label>
                             <textarea className="form-control form-control-lg" rows="5" id="comment" name="text" placeholder="Your message"></textarea>
                         </div>
-                        <div className="d-grid">
+                        <div className="d-grid mt-5 pb-2">
                             <button 
                                 type="submit" 
                                 className="btn btn-block btn-lg"

@@ -9,7 +9,7 @@ export default function About() {
   return (
     <Fragment>
       {/* Header section */}
-      <header className="row pt-5" style={{ color: appTheme.textColor }}>
+      <header className="row py-3" style={{ color: appTheme.textColor }}>
         <div className="col-8 mx-auto text-center">
           <h1>About</h1>
           <p>We are a small passionate team.</p>
@@ -17,36 +17,39 @@ export default function About() {
       </header>
 
       {/* Image cards section */}
-      <section className="row pt-5">
-        <div className="col-4">
+      <section className="row pt-1">
+        <div className="col-6 col-md-4">
           <ImageCard
             title="none"
             author="none"
             section="none"
+            imgLink="none"
             img={`/images/woman2.png`}
           />
         </div>
-        <div className="col-4">
+        <div className="col-6 col-md-4">
           <ImageCard
             title="none"
             author="none"
             section="none"
+            imgLink="none"
             img={`/images/man1.png`}
           />
         </div>
-        <div className="col-4">
+        <div className="col-sm-6 col-md-4">
           <ImageCard
             title="none"
             author="none"
-            section=""
+            section="none"
+            imgLink="none"
             img={`/images/woman3.png`}
           />
         </div>
       </section>
 
       {/* Main content section */}
-      <section className="row" style={{ color: appTheme.textColor }}>
-        <div className="col-9 mx-auto text-center">
+      <section className="row mb-5" style={{ color: appTheme.textColor }}>
+        <div className="col-sm-12 col-lg-9 mx-auto text-center">
           <p>
             We provide real-time connectivity to enable software providers and
             financial institutions to build integrated products for their small

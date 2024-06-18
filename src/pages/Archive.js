@@ -10,7 +10,7 @@ export default function Archive() {
   return (
     <Fragment>
       {/* Header section */}
-      <header className="row py-5 text-center" style={{ color: appTheme.textColor, backgroundColor: appTheme.backgroundColor }}>
+      <header className="row py-3 text-center" style={{ color: appTheme.textColor, backgroundColor: appTheme.backgroundColor }}>
         <div className="col-8 mx-auto text-center">
           <h1>Archive</h1>
           <p>See all posts we have ever written</p>

@@ -9,11 +9,11 @@ export default function ImageCard(props) {
     const { appTheme } = useAppContext();
 
     // Destructuring props
-    const { img, title, section, section2, author, date, profilePicture, fullTitle } = props;
+    const { img, title, section, section2, author, date, profilePicture, fullTitle, imgLink } = props;
 
     return (
         // Link to the article with fullTitle as the dynamic parameter
-        <Link style={{ textDecoration: "none", cursor: "pointer" }} to={`../article/${fullTitle}`}>
+        <Link style={{ textDecoration: "none", cursor: "pointer" }} to={imgLink == "none" ? "#" : `../article/${fullTitle}`}>
 
             <div className="card pb-4 border-0" style={{ backgroundColor: appTheme.backgroundColor }}>
                 {/* Container for image with zoom effect */}
@@ -40,13 +40,11 @@ export default function ImageCard(props) {
                 </div>
                 {/* Card body */}
                 <div className={`card-body py-0 px-2 ${title === "none" ? "d-none" : ""}`}>
-                    {/* Link to the article */}
-                    <Link className="nav-link" link={`../article/${fullTitle}`}>
+
                         {/* Article title */}
                         <h2 className="animated-text card-title" title={`${fullTitle}`} style={{ backgroundColor: appTheme.backgroundColor, fontSize: "1.125rem", color: appTheme.textColor }}>
                             {title}
                         </h2>
-                    </Link>
                 </div>
                 {/* Card footer */}
                 <div className={`card-footer px-2 border-0 ${author === "none" ? "d-none" : ""}`} style={{ backgroundColor: appTheme.backgroundColor, color: appTheme.textColor, opacity: "0.70" }}>

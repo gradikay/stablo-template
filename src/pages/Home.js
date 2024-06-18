@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <Fragment>
       {/* Featured posts section */}
-      <header className='row pt-5'>
+      <header className='row py-3'>
         {data.posts.slice(0, 2).map((post, index) => (
           <div className="col-sm-12 col-md-6" key={index}>
             {/* ImageCard component displaying post information */}
@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* View all posts button */}
-      <section className='row pt-3 pb-5'>
+      <section className='row pt-2 pb-4'>
         <div className="col-sm-12 col-lg-3 text-center mx-auto">
           {/* Link to the archive page */}
           <Link to="archive" className="btn btn-white shadow-sm" style={{ color: appTheme.textColor, border: `2px solid ${appTheme.textColor}` }}>

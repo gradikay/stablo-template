@@ -19,9 +19,9 @@ const Layout = () => {
         <div className="container-fluid">
           {/* Navbar Toggler */}
           <button
-            className="navbar-toggler brand shadow-sm"
+            className="navbar-toggler brand shadow-sm mb-3"
             type="button"
-            style={{ color: appTheme.textColor, border: `2px solid ${appTheme.textColor}` }}
+            style={{ color: appTheme.textColor, fontSize: "1.2rem", border: `2px solid ${appTheme.textColor}` }}
             data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavbar"
             aria-controls="collapsibleNavbar"
@@ -29,7 +29,7 @@ const Layout = () => {
             aria-label="Toggle navigation"
           >
             <span className="p-2 d-block">
-              Stable
+              <strong>Stable</strong>
             </span>
           </button>
           {/* Navbar Collapsible Content */}

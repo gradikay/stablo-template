@@ -8,7 +8,7 @@ export default function PageNotFound() {
     return (
         <Fragment>
             {/* Header section with the 404 image */}
-            <header className='row pt-5'>
+            <header className='row pt-3 pb-4'>
                 <div className="col-sm-12 col-lg-6 mx-auto">
                     {/* 404 Image */}
                     <img 
